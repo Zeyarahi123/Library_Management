@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>List of All Book</title>
+</head>
+<body>
+
+    <table>
+        <h3><i>List Of All Book</i></h3>
+        <th>id</th>
+        <th>Book_Name</th>
+        <th>Author_Name</th>
+        <th>Title</th>
+        <th>Desc_Book</th>
+        <th>Book_Price</th>
+
+        {% for data in dataset %}.
+         <tr>
+           <td>{{ data.id }}</td>
+           <td>{{ data.Book_Name }}</td>
+           <td>{{ data.Author_Name}}</td>
+           <td> {{ data.Title}}</td>
+           <td>{{ data.Desc_Book}}</td>
+           <td>{{ data.Book_Price}}</td>
+        </tr>
+        {% endfor% }
+    </table>
+
+
+</body>
+</html>
